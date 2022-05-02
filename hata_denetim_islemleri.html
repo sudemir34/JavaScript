@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hata denetim işlemleri</title>
+</head>
+<body>
+    
+    <script>
+        // try = Hata oluşturabilecek kodlar iççin kullanılır.
+        // catch = Hata oluşursa çalıştırılacak kodları için kulanılır.
+        // finally = Hata oluşsada oluşmasada çalıştırılacak kodlar için kullanılr.
+        // throw = Hata oluşturabilecek kodlar için kullanılır.
+
+        try{
+            var isim="Sümeyye Demir";
+            document.write(isim + "<br/>");
+            throw("Değişken taımlama hatası!! sayisim adındaki değişken yok");
+            document.write(soyisim);
+        }
+        catch(err)
+        {
+            document.write("Hata oluştu");
+            document.write(err +"<br/>");
+
+        }
+        finally
+        {
+            document.write("Hata olsada olamasada çalışacak");
+        }
+
+
+        // var baslangic=1;
+        
+        // do{
+        //     document.write(baslangic);
+        //     baslangic++;
+        // } while(baslangic<=10)
+
+
+
+        
+  </script>
+</body>
+</html>
